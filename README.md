@@ -12,11 +12,11 @@ Because I want to build something simple, but useful demonstrating IoT using [AR
 
 # How
 1. Load board with [mbed-client-example](https://github.com/ARMmbed/mbed-client-examples). Plug in power and ethernet to connect the board to the internet.
-2. **Optional Bonus :** use relay to control super awesome police siren instead of onboard LED on board. To do this replace the deffinition of `led1` in `source/main.cpp`.
-```cpp
-DigitalOut led1(D3); // where D3 controls the relay
-```
-3. Run the standalone python script on an internet connected computer. 
+   * **Optional Bonus :** use relay to control super awesome police siren instead of onboard LED on board. To do this replace the deffinition of `led1` in `source/main.cpp`.
+   ```cpp
+   DigitalOut led1(D3); // where D3 controls the relay
+   ```
+2. Run the standalone python script on an internet connected computer. 
 ```python
 python ./src/standalone.py
 ```
