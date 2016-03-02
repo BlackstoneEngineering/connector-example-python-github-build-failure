@@ -1,14 +1,18 @@
 # What 
-This is a simple python webapp that turns a IoT light on / off using mbed Device Connector depending on the status of a github repo build status. 
+This is a python script that will set off an alarm when github repositories continuous integration tests fail. 
 
 # Why
 Because I want to build something simple, but useful demonstrating IoT using [ARM mbed Device Connector](http://connector.mbed.com)
+
+# Goal
+To shame co-workers into fixing critical repositories when they break by putting a siren light above their desk and setting it off when something they are responsible for has broken / failed its CI tests. Its easy to ignore or filter email, its very hard to ignore a siren going off above your head. 
 
 # Pre-Requirements
 * The [mbed_connector_api](https://github.com/ARMmbed/mbed-connector-api-python) python package
 * Python 2.7.9+
 * device running [mbed-client-example](https://github.com/ARMmbed/mbed-client-examples)
     * Requires [developer.mbed.org](http://developer.mbed.org) / [connector.mbed.com](http://connector.mbed.com) account
+* Github repository with CI tests, suggesting either [TravisCI](https://travis-ci.org/) or [CircleCI](https://circleci.com/) as they integrate very nicely. 
 
 # How
 1. Load board with [mbed-client-example](https://github.com/ARMmbed/mbed-client-examples). Plug in power and ethernet to connect the board to the internet.
@@ -21,6 +25,9 @@ Because I want to build something simple, but useful demonstrating IoT using [AR
 ```python
 python ./src/standalone.py
 ```
+
+# Output
+The LED (or the awesome siren light if you enable it) will blink on and off if the build is broken. If the build is passing then the siren will not go off.
 
 # Liscense
 Apache 2.0, see the Liscense file. It means you are free to re-use it in personal or commercial but make sure to give credit where its due. Preferred credit in the form of backlinks to this repo. 
