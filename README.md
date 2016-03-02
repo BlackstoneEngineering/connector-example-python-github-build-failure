@@ -16,7 +16,8 @@ Because I want to build something simple, but useful demonstrating IoT using [AR
    ```cpp
    DigitalOut led1(D3); // where D3 controls the relay
    ```
-2. Run the standalone python script on an internet connected computer. 
+2. Modify the values in the `standalone.py` script. You will need to fill in the [token](https://connector.mbed.com/#accesskeys) field, the `endpoint` field, and you can change repo the build badge is on by changing the `owner`, `repo`, and `ref` fields. 
+3. Run the standalone python script on an internet connected computer. 
 ```python
 python ./src/standalone.py
 ```
