@@ -30,5 +30,5 @@ python ./src/standalone.py
 # Output
 The LED (or the awesome siren light if you enable it) will blink on and off if the build is broken. If the build is passing then the siren will not go off.
 
-# Liscense
+# License
 Apache 2.0, see the Liscense file. It means you are free to re-use it in personal or commercial but make sure to give credit where its due. Preferred credit in the form of backlinks to this repo. 
