@@ -6,6 +6,7 @@ Because I want to build something simple, but useful demonstrating IoT using [AR
 
 # Goal
 To shame co-workers into fixing critical repositories when they break by putting a siren light above their desk and setting it off when something they are responsible for has broken / failed its CI tests. Its easy to ignore or filter email, its very hard to ignore a siren going off above your head. 
+![Imagined Use Case](./application.gif)
 
 # Pre-Requirements
 * The [mbed_connector_api](https://github.com/ARMmbed/mbed-connector-api-python) python package
